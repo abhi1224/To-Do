@@ -1,5 +1,6 @@
 import toggleComplete from './toggleComplete.js'
 import editTodo from './editTodo.js'
+import removeTodo from './removeTodo.js'
 
 const Container = document.querySelector(".container");
 const template = document.querySelector('template')
@@ -26,6 +27,11 @@ const renderTodo = (todo) => {
     const editBtn = clon.querySelector('.edit-btn');
     editBtn.addEventListener('click',() => {
         editTodo(todo);
+    });
+
+    const removeBtn = clon.querySelector('.remove-btn');
+    removeBtn.addEventListener('click', () => {
+        removeTodo(todo);
     });
 
     Container.appendChild(clon);  
