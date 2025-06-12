@@ -10,6 +10,8 @@ let inputBox = document.querySelector(".input-box");
 let btn = document.querySelector("#add");
 
 let filterBtn = document.querySelector('#filter');
+const listContainer = document.querySelector('.todo-list');
+
 
 btn.addEventListener('click',() => {
   if(inputBox.value === ''){
@@ -30,5 +32,6 @@ window.addEventListener('DOMContentLoaded', () => {
 filterBtn.addEventListener('click', (e) => {
   handlerIsActive(e.target);
   const filtered = filterTodo(e.target);
+  listContainer.innerHTML = '';
   renderFilteredTodo(filtered);
 })
