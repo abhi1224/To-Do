@@ -1,10 +1,15 @@
 import './style.css'
 import createTodo from './createTodo.js'
-import renderTodo from './renderTodo.js';
+import renderTodo from './renderTodo.js'
+import handlerIsActive from './handlerIsActive.js'
+import filterTodo from './filter.js'
+import renderFilteredTodo from './renderFilteredTodo.js'
 
 
 let inputBox = document.querySelector(".input-box");
 let btn = document.querySelector("#add");
+
+let filterBtn = document.querySelector('#filter');
 
 btn.addEventListener('click',() => {
   if(inputBox.value === ''){
@@ -22,3 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+filterBtn.addEventListener('click', (e) => {
+  handlerIsActive(e.target);
+  const filtered = filterTodo(e.target);
+  renderFilteredTodo(filtered);
+})

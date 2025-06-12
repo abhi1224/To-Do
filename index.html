@@ -11,6 +11,13 @@
         <input type="text" class="input-box" />
         <button id="add">Add</button>
       </div>
+      <div id="filter" class="filter flex">
+        <p>Filter : </p>
+        <button class="all active" data-filter="all">All</button>
+        <button class="completed" data-filter="completed">Completed</button>
+        <button class="uncompleted" data-filter="uncompleted">Uncompleted</button>
+      </div>
+      <div class="todo-list"></div>
       <template>
         <div class="todo-container">
           <input type="checkbox" name="checkbox" id="check" />

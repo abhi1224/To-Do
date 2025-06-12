@@ -2,7 +2,7 @@ import toggleComplete from './toggleComplete.js'
 import editTodo from './editTodo.js'
 import removeTodo from './removeTodo.js'
 
-const Container = document.querySelector(".container");
+const Container = document.querySelector(".todo-list");
 const template = document.querySelector('template')
 
 
