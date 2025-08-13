@@ -57,4 +57,4 @@ A simple yet powerful Todo List application built using **HTML, CSS, and Vanilla
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/abhi1224/To-Do.git
-cd todo-app
+cd To-Do

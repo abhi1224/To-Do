@@ -25,9 +25,17 @@
     border-radius: 5px;
     margin-block: 5rem;
 }
-.input-box{
-    width: 40rem;
+.input-container{
+    width: 90%;
+    margin:auto;
 }
+.input-box{
+    width: 80%;
+}
+#add{
+    width: 20%;
+}
+
 #add{
     cursor: pointer;
 }
@@ -57,6 +65,19 @@
     background-color: white;
     padding: 0.9rem 1.5rem;
     margin: 1rem auto;
+}
+@media screen and (max-width: 720px) {
+    .todo-container{
+        width: 90%;
+        margin:auto;
+    }
+    .filter{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .filter button{
+        padding: 2px 5px;
+    }
 }
 li{
     list-style: none;
